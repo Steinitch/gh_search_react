@@ -5,8 +5,13 @@ class SessionsController < ApplicationController
   end
 
   def create
-    puts auth_hash
+    user = User.find_or_create_by(provider: auth_hash[:provider], uid: auth_hash[:uid]) do |user|
+      user.name = auth_hash[:info][:name]
+      user.email = auth_hash[:info][:email]
+    end
+    session[:user_id] = user.id
     redirect_to searches_path
+
   end
 
   def destroy
