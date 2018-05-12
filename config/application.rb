@@ -26,7 +26,8 @@ module GhSearch
     config.autoload_paths << Rails.root.join('app/classes/**')
 
     config.middleware.use OmniAuth::Builder do
-      provider :developer
+      provider :developer if Rails.env.development?
+      provider :github, Rails.application.secrets.github_client_id, Rails.application.secrets.github_secret
     end
   end
 end

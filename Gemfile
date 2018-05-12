@@ -33,6 +33,8 @@ gem 'puma'
 gem 'httparty'
 
 gem 'omniauth'
+gem 'omniauth-github'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

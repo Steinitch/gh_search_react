@@ -1,6 +1,9 @@
 class SessionsController < ApplicationController
   skip_before_filter :verify_authenticity_token, only: :create
 
+  def index
+  end
+
   def create
     puts auth_hash
     redirect_to searches_path

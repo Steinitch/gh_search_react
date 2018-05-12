@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources :searches, only: [:index, :create]
 
   get 'auth/developer', as: 'developer_auth'
+  get 'auth/github', as: 'github_auth'
+
   match 'auth/:provider/callback' =>   'sessions#create', via: [:get, :post]
 
   get 'sessions/destroy', as: 'logout'
