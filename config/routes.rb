@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
-  root 'searches#index'
+  root 'sessions#index'
 
   resources :searches, only: [:index, :create]
+
+  get 'auth/developer', as: 'developer_auth'
+  match 'auth/:provider/callback' =>   'sessions#create', via: [:get, :post]
+
+  get 'sessions/destroy', as: 'logout'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

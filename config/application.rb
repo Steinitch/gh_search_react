@@ -24,5 +24,9 @@ module GhSearch
     config.active_record.raise_in_transactional_callbacks = true
 
     config.autoload_paths << Rails.root.join('app/classes/**')
+
+    config.middleware.use OmniAuth::Builder do
+      provider :developer
+    end
   end
 end
