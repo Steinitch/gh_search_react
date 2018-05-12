@@ -6,8 +6,7 @@ class SearchesController < ApplicationController
 
   def create
     query = params[:query]
-    @response = HTTParty.get("https://api.github.com/search/repositories?q=#{query}&sort=stars&order=desc")
-
+    @response = HttpRequest.new(query).search_github
     render action: "index", response: @response
   end
 end

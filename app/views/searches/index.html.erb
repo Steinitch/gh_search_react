@@ -10,22 +10,24 @@
 
 <table>
   <thead>
-  <th>Name</th>
-  <th>Repo</th>
-  <th>Watchers</th>
-  <th>Score</th>
-  <th>Forks</th>
-  <th>Owner</th>
+    <th>Name</th>
+    <th>Repo</th>
+    <th>Watchers</th>
+    <th>Score</th>
+    <th>Forks</th>
+    <th>Owner</th>
   </thead>
-  <% @response['items'].each do |response| %>
-    <tr>
-      <th><%= response['full_name'] %></th>
-      <td><%= link_to response['name'], response['html_url'], target: '_blank' %></td>
-      <td><%= response['watchers'] %></td>
-      <td><%= response['score'] %></td>
-      <td><%= response['forks'] %></td>
-      <td><%= image_tag(response['owner']['avatar_url'], size: "30x30") %></td>
-    </tr>
+  <% if @response['items'] %>
+    <% @response['items'].each do |response| %>
+      <tr>
+        <th><%= response['full_name'] %></th>
+        <td><%= link_to response['name'], response['html_url'], target: '_blank' %></td>
+        <td><%= response['watchers'] %></td>
+        <td><%= response['score'] %></td>
+        <td><%= response['forks'] %></td>
+        <td><%= image_tag(response['owner']['avatar_url'], size: "30x30") %></td>
+      </tr>
+    <% end %>
   <% end %>
 
 </table>
