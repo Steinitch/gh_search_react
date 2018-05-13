@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
 
   def create
     user = User.find_or_create_by(provider: auth_hash[:provider], uid: auth_hash[:uid]) do |user|
-      user.name = auth_hash[:info][:name]
+      user.name  = auth_hash[:info][:name]
       user.email = auth_hash[:info][:email]
     end
     session[:user_id] = user.id
