@@ -36,6 +36,7 @@ gem 'omniauth'
 gem 'omniauth-github'
 gem 'rb-readline'
 
+gem 'webpacker'
 gem 'react-rails'
 
 # Use Capistrano for deployment

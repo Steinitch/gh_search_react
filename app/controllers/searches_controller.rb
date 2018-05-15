@@ -1,6 +1,6 @@
 class SearchesController < ApplicationController
-  before_action :autheticate_user
-  
+  # before_action :autheticate_user
+
   def index
     @response ||= {}
     @response['items'] = []

@@ -1,0 +1,186 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install', 'node' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.1
+4 verbose install initial load of /Users/paulo/gh_search_react/package.json
+5 verbose readDependencies loading dependencies from /Users/paulo/gh_search_react/package.json
+6 silly cache add args [ 'node', null ]
+7 verbose cache add spec node
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'node',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'node',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed node@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for node
+11 info addNameTag [ 'node', 'latest' ]
+12 silly mapToRegistry name node
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/node
+16 verbose addNameTag registry:https://registry.npmjs.org/node not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/node
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 8:44:23 PM
+20 verbose request id ef6fe07081d628cf
+21 http request GET https://registry.npmjs.org/node
+22 http 200 https://registry.npmjs.org/node
+23 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+23 verbose headers   server: 'UploadServer',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'last-modified': 'Tue, 1 May 2018 4:03:22 GMT',
+23 verbose headers   etag: '"5ae7e70a-5c391"',
+23 verbose headers   'x-npm-region': 'US-Central',
+23 verbose headers   'content-encoding': 'gzip',
+23 verbose headers   'content-length': '60464',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Mon, 14 May 2018 01:44:01 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   age: '0',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-dfw18627-DFW',
+23 verbose headers   'x-cache': 'MISS',
+23 verbose headers   'x-cache-hits': '0',
+23 verbose headers   'x-timer': 'S1526262242.849222,VS0,VE131',
+23 verbose headers   vary: 'Accept-Encoding, Accept' }
+24 silly get cb [ 200,
+24 silly get   { 'content-type': 'application/json; charset=UTF-8',
+24 silly get     server: 'UploadServer',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'last-modified': 'Tue, 1 May 2018 4:03:22 GMT',
+24 silly get     etag: '"5ae7e70a-5c391"',
+24 silly get     'x-npm-region': 'US-Central',
+24 silly get     'content-encoding': 'gzip',
+24 silly get     'content-length': '60464',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Mon, 14 May 2018 01:44:01 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-dfw18627-DFW',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1526262242.849222,VS0,VE131',
+24 silly get     vary: 'Accept-Encoding, Accept' } ]
+25 verbose get saving node to /Users/paulo/.npm/registry.npmjs.org/node/.cache.json
+26 silly addNameTag next cb for node with tag latest
+27 silly addNamed node@10.0.0
+28 verbose addNamed "10.0.0" is a plain semver version for node
+29 silly mapToRegistry name node
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/node
+33 verbose addRemoteTarball https://registry.npmjs.org/node/-/node-10.0.0.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/node/-/node-10.0.0.tgz',
+34 verbose addRemoteTarball   'd998340e4bbba200134c1b0376ef79810ca18adb' ]
+35 info retry fetch attempt 1 at 8:44:23 PM
+36 info attempt registry request try #1 at 8:44:23 PM
+37 http fetch GET https://registry.npmjs.org/node/-/node-10.0.0.tgz
+38 http fetch 200 https://registry.npmjs.org/node/-/node-10.0.0.tgz
+39 silly fetchAndShaCheck shasum d998340e4bbba200134c1b0376ef79810ca18adb
+40 verbose addTmpTarball /var/folders/fp/2x5f_hq15nvd76dzmmsqk5hm0000gn/T/npm-40214-9c4bc4e7/registry.npmjs.org/node/-/node-10.0.0.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for node@10.0.0
+42 silly cache afterAdd node@10.0.0
+43 verbose afterAdd /Users/paulo/.npm/node/10.0.0/package/package.json not in flight; writing
+44 verbose afterAdd /Users/paulo/.npm/node/10.0.0/package/package.json written
+45 silly install resolved [ { name: 'node',
+45 silly install resolved     version: '10.0.0',
+45 silly install resolved     description: 'node',
+45 silly install resolved     main: 'index.js',
+45 silly install resolved     keywords: [ 'runtime' ],
+45 silly install resolved     repository:
+45 silly install resolved      { type: 'git',
+45 silly install resolved        url: 'git+https://github.com/aredridel/node-bin-gen.git' },
+45 silly install resolved     scripts: { preinstall: 'node installArchSpecificPackage' },
+45 silly install resolved     bin: { node: 'bin/node' },
+45 silly install resolved     dependencies: { 'node-bin-setup': '^1.0.0' },
+45 silly install resolved     license: 'ISC',
+45 silly install resolved     author: '',
+45 silly install resolved     engines: { npm: '>=5.0.0' },
+45 silly install resolved     bugs: { url: 'https://github.com/aredridel/node-bin-gen/issues' },
+45 silly install resolved     homepage: 'https://github.com/aredridel/node-bin-gen#readme',
+45 silly install resolved     _id: 'node@10.0.0',
+45 silly install resolved     _npmVersion: '6.0.0',
+45 silly install resolved     _nodeVersion: '8.9.4',
+45 silly install resolved     _npmUser: { name: 'aredridel', email: 'aredridel@dinhe.net' },
+45 silly install resolved     dist:
+45 silly install resolved      { integrity: 'sha512-Ps0lFNyTDEzH8yqCZ3hBXARs+H28dn1cmJt2oxWgqIdMvt0+SByZuiA12mEV+akVjXxkSuuaBH8I92C0SrnFkQ==',
+45 silly install resolved        shasum: 'd998340e4bbba200134c1b0376ef79810ca18adb',
+45 silly install resolved        tarball: 'https://registry.npmjs.org/node/-/node-10.0.0.tgz',
+45 silly install resolved        fileCount: 3,
+45 silly install resolved        unpackedSize: 1475,
+45 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa3/chCRA9TVsSAnZWagAAeHEQAINECnvlZQf/bXTnNyS1\nT3zvDBwd/fgDjyWFTmy22Tfd783h6a2K8FBblBVK0oS9p8+i5mUqsjFOYwzj\nXX3/ih2wiKlUpPAZi43ZkJ2hqqkvzg7SsdbS0YlFOipAG8XydPYa4eNFxZxV\n1pnKlPvsw6CDjlXlQNbWGZxX6FdzMXn0k6+1MOr2hmEAfZWJVN9T9yb5/sXW\nJzH3LtvlCIKc5tCAlY2Wjpxkp4B8bHv/tJObuSBHeevLw17a0lnfMw7UaWBQ\nRZhyImOJOwtQ2BWeNeLkxu+4XG1HJOwPIKea6q73ko0VcAqpBi2m/rzA7vWV\nKuc0xuV4GgSDRWcx1Uc4YKaSxkWNMgM2tewzpft9b/z0n3dvvylwImgrVuXN\nLA7v/mMq9X7P5G8HSnBEGIe6C2/Gkz3NtJ3hr/m+gARsbyQ7RQilPCE/xL43\nX5/VB7Zth6l+2yP1Sqw2/yURl7dKigiwLsVLaLiaJOlE/Z4OuxXI+3GWmAzp\nF17ggv+D3LLJ0/nLFFnDGbUYAIyX8hdeEPtJVAOO8FEAflzTwdHz5hrHcFKV\nGGGF5b/WotaFk5KlpmDleY56Ccjhl4ySQtEBS3PjAjcnB7b6aAVVWKYsYJxs\nKBrnpx4OiC3hFBTlqZsTc8e4BXjKTleRvrUKrcTZxEq3ITnlFna1hCu1zMhH\nmofE\r\n=AVFm\r\n-----END PGP SIGNATURE-----\r\n' },
+45 silly install resolved     maintainers: [ [Object], [Object] ],
+45 silly install resolved     directories: {},
+45 silly install resolved     _npmOperationalInternal:
+45 silly install resolved      { host: 's3://npm-registry-packages',
+45 silly install resolved        tmp: 'tmp/node_10.0.0_1524627232407_0.5808748470254494' },
+45 silly install resolved     _shasum: 'd998340e4bbba200134c1b0376ef79810ca18adb',
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/node/-/node-10.0.0.tgz',
+45 silly install resolved     _from: 'node@latest' } ]
+46 info install node@10.0.0 into /Users/paulo/gh_search_react
+47 info installOne node@10.0.0
+48 verbose installOne of node to /Users/paulo/gh_search_react not in flight; installing
+49 verbose lock using /Users/paulo/.npm/_locks/node-de9dcc62f69e116a.lock for /Users/paulo/gh_search_react/node_modules/node
+50 silly install write writing node 10.0.0 to /Users/paulo/gh_search_react/node_modules/node
+51 verbose unbuild node_modules/node
+52 silly gentlyRm /Users/paulo/gh_search_react/node_modules/node is being purged from base /Users/paulo/gh_search_react
+53 verbose gentlyRm don't care about contents; nuking /Users/paulo/gh_search_react/node_modules/node
+54 verbose tar unpack /Users/paulo/.npm/node/10.0.0/package.tgz
+55 verbose tar unpacking to /Users/paulo/gh_search_react/node_modules/node
+56 silly gentlyRm /Users/paulo/gh_search_react/node_modules/node is being purged
+57 verbose gentlyRm don't care about contents; nuking /Users/paulo/gh_search_react/node_modules/node
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 silly gunzTarPerm extractEntry package.json
+60 silly gunzTarPerm extractEntry installArchSpecificPackage.js
+61 silly gunzTarPerm extractEntry README.md
+62 verbose write writing to /Users/paulo/gh_search_react/node_modules/node/package.json
+63 info preinstall node@10.0.0
+64 verbose unsafe-perm in lifecycle true
+65 info node@10.0.0 Failed to exec preinstall script
+66 verbose unlock done using /Users/paulo/.npm/_locks/node-de9dcc62f69e116a.lock for /Users/paulo/gh_search_react/node_modules/node
+67 verbose stack Error: node@10.0.0 preinstall: `node installArchSpecificPackage`
+67 verbose stack Exit status 1
+67 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+67 verbose stack     at emitTwo (events.js:87:13)
+67 verbose stack     at EventEmitter.emit (events.js:172:7)
+67 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+67 verbose stack     at emitTwo (events.js:87:13)
+67 verbose stack     at ChildProcess.emit (events.js:172:7)
+67 verbose stack     at maybeClose (internal/child_process.js:821:16)
+67 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+68 verbose pkgid node@10.0.0
+69 verbose cwd /Users/paulo/gh_search_react
+70 error Darwin 15.6.0
+71 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "node"
+72 error node v4.3.1
+73 error npm  v2.14.12
+74 error code ELIFECYCLE
+75 error node@10.0.0 preinstall: `node installArchSpecificPackage`
+75 error Exit status 1
+76 error Failed at the node@10.0.0 preinstall script 'node installArchSpecificPackage'.
+76 error This is most likely a problem with the node package,
+76 error not with npm itself.
+76 error Tell the author that this fails on your system:
+76 error     node installArchSpecificPackage
+76 error You can get their info via:
+76 error     npm owner ls node
+76 error There is likely additional logging output above.
+77 verbose exit [ 1, true ]
+78 verbose unbuild node_modules/node
+79 info preuninstall node@10.0.0
+80 info uninstall node@10.0.0
+81 verbose unbuild rmStuff node@10.0.0 from /Users/paulo/gh_search_react/node_modules
+82 silly gentlyRm /Users/paulo/gh_search_react/node_modules/.bin/node is being gently removed
+83 silly gentlyRm verifying /Users/paulo/gh_search_react is an npm working directory
+84 silly gentlyRm containing path /Users/paulo/gh_search_react is under npm's control, in /Users/paulo/gh_search_react
+85 silly gentlyRm deletion target /Users/paulo/gh_search_react/node_modules/.bin/node is under /Users/paulo/gh_search_react
+86 verbose gentlyRm vacuuming from /Users/paulo/gh_search_react/node_modules/.bin/node up to /Users/paulo/gh_search_react
+87 info postuninstall node@10.0.0
+88 silly gentlyRm /Users/paulo/gh_search_react/node_modules/node is being purged from base /Users/paulo/gh_search_react
+89 verbose gentlyRm don't care about contents; nuking /Users/paulo/gh_search_react/node_modules/node
+90 silly vacuum-fs purging /Users/paulo/gh_search_react/node_modules/node
+91 silly vacuum-fs removing /Users/paulo/gh_search_react/node_modules
+92 silly vacuum-fs finished vacuuming up to /Users/paulo/gh_search_react
