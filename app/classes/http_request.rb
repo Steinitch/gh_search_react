@@ -8,6 +8,6 @@ class HttpRequest
   end
 
   def search_github
-    HTTParty.get("https://api.github.com/search/repositories?q=#{query}&language:ruby&sort=stars&order=desc")
+    HTTParty.get("https://api.github.com/search/repositories?q=#{query}&language:ruby&sort=stars&order=desc&per_page=5")
   end
 end

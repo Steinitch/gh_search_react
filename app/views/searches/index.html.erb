@@ -12,11 +12,7 @@
     </nav>
   </div>
 </header>
-
 <main role="main" class="inner cover">
-
-  <%= react_component("Searches", {name: 'Paul'}) %>
-
 
   <h1 class="cover-heading">Search GitHub</h1>
 
@@ -31,32 +27,10 @@
     <% end %>
   </div>
 
-
-
-  <table class="table table-dark">
-    <thead>
-    <th scope="col">Name</th>
-    <th scope="col">Repo</th>
-    <th scope="col">Watchers</th>
-    <th scope="col">Score</th>
-    <th scope="col">Forks</th>
-    <th scope="col">Owner</th>
-
-    </thead>
     <% if @response['items'] %>
-      <% @response['items'].each do |response| %>
-        <tr>
-          <th scope="row"><%= response['full_name'] %></th>
-          <td><%= link_to response['name'], response['html_url'] %></td>
-          <td><%= response['watchers'] %></td>
-          <td><%= response['score'] %></td>
-          <td><%= response['forks'] %></td>
-          <td><%= image_tag(response['owner']['avatar_url'], size: "30x30") %></td>
-        </tr>
-      <% end %>
+      <%= react_component("Searches", {results: @response['items']}) %>
     <% end %>
 
-  </table>
 </main>
 
 <%= render 'layouts/footer' %>
